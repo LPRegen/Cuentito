@@ -383,10 +383,10 @@ h1.title {
 .container {
   display: flex; /* enables flex layout for the container */
   flex-wrap: wrap; /* allows flex items to wrap onto multiple rows or columns */
-  justify-content: center; /* centers the flex items along the main axis */
-  align-items: center; /* centers the flex items along the cross axis */
-  height: auto;
-  position: relative;
+  /* justify-content: center; */ /* centers the flex items along the main axis */
+  /* align-items: center; */ /* centers the flex items along the cross axis */
+  /* height: auto; */
+  /* position: relative; */
 }
 
 .row {
