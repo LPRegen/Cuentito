@@ -1,0 +1,318 @@
+a.mp:hover {
+	color: #fff;
+} 
+.head {
+	display: none;
+} 
+.hamburger-menu {
+	display: none;
+	cursor: pointer;
+	background: none;
+	border: 0;
+	color: #fff;
+	float: right;
+	margin-top: 1em;
+}
+.notice-bar {
+	display: none;
+	background-color: #f7f7f7;
+	padding: 15px;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	animation: fadeout 20s linear forwards;
+}
+
+@keyframes fadeout {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+
+body {
+	background:linear-gradient(44deg,#e3a74d 0%,#e9cf97 100%);
+	font-family: "Epilogue", Arial, Helvetica, "sans-serif";
+} 
+.left-column {
+	text-align: center;
+	padding-top: 0;
+	padding: 50px;
+}
+#right-column {
+	text-align: center;
+	padding: 50px;
+	opacity: 0.8;
+	right: 0px;
+	background-image: url(/images/caperucita.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	transition: background-image 1s ease-in-out;
+}
+.logomain {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	margin-bottom: 2em;
+}
+.title {
+	margin-bottom: 1em !important;
+	font-size: 36px;
+	color: #fff;
+	font-family: "Epilogue", Arial, Helvetica, "sans-serif";
+	text-align: left;
+
+}
+.description {
+	color: #fff;
+	text-align: left;
+} 
+h2 {
+	font-family: "Epilogue", Arial, Helvetica, "sans-serif";
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+} 
+.how {
+	background: #fff;
+	padding-top: 2em;
+	padding-bottom: 2em;
+} 
+.how p {
+	text-align: justify;
+} 
+.subtitle {
+	margin-top: 20px;
+	font-size: 18px;
+}
+.call-to-action {
+	margin-top: 1em !important;
+	padding: 20px 50px !important;
+	background-color: #333 !important;
+	border: 0 !important;
+	color: #fff !important;
+	font-size: 18px !important;
+	border-radius: 15px !important;
+	cursor: pointer !important; 
+}
+.section-title {
+	text-align: center;
+	margin: 50px 0;
+}
+
+/* section {
+padding: 2em 0 3em 0;
+background:linear-gradient(44deg,#e3a74d 0%,#e9cf97 100%);
+} 
+*/
+h1 {
+	margin-top: 2em;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.section-title p {
+	font-size: 18px;
+	margin: 20px 0;
+}
+
+.section-subscribe {
+	text-align: center;
+	margin: 50px 0;
+}
+
+.carrousel-section {
+	margin: 50px 0;
+}
+
+.carrousel-section .slide {
+	text-align: center;
+}
+
+.carrousel-section .slide img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.carrousel-section .slide h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.carrousel-section .slide p {
+	font-size: 18px;
+	margin: 20px 0;
+}
+
+.first-row {
+	z-index: 1;
+	height: 89vh;
+	display: flex;
+	position: relative; /* add this to make the down arrow position absolute within the first-row */
+}
+
+.down-arrow {
+	position: absolute; /* position absolute within the first-row */
+	bottom: 20px; /* distance from bottom of first-row */
+	left: 50%; /* center horizontally within first-row */
+	transform: translateX(-50%); /* this moves the down arrow to the left 50% of its width to center it within the first-row */
+}
+
+.left-column, .right-column{
+	flex: 1; /* each column will take up equal space within the first-row */
+	height: 100%; /* make each column 100% height of the first-row */
+}
+
+section.newsletter {
+	background: #333;
+	padding-top: 2em;
+	padding-bottom: 2em;
+
+}  
+
+.down-arrow {
+	cursor: pointer;
+}
+.form-control {
+	margin-top: 10px;
+	border: 1px solid #333;
+	font-size: 14px;
+}
+.form-group {
+	text-align: center;
+	margin: 0 auto;
+	display: inline-block;
+	width: 80%;
+}
+.w-100 {
+	max-width: 512px;
+	margin: 0 auto;
+}
+
+.carousel, .carousel-inner {
+	margin-top: 1em;
+	max-width: 100%;
+} 
+
+.carousel-caption {
+	background: rgba(0,0,0,0.8);
+	width: 512px;
+	margin: 0 auto;
+	padding: 1em;
+	bottom: 0;
+} 
+
+.footer {
+	background-color: #333 !important;
+	width: 100%;
+	padding-top: 2em;
+	padding-bottom: 1em;
+} 
+
+.menu-footer a, .menu-top a {
+	color: #fff;
+} 
+
+.menu-top {
+	float: right;
+}
+
+.menu-top ul li {
+	display:inline-block;
+	vertical-align: top;
+	margin-right: 2em;
+}
+
+.menu-top li a {
+	margin-right: 2em;
+}
+
+.text-container {
+	display: flex;
+	align-items: center;
+}
+
+.left-column-news {
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+}
+
+@media only screen and (max-width: 767px) {
+	.image-logo {
+		display: block;
+	}
+	.head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px;
+		width: 100%;
+	}
+	.head-left {
+		display: flex;
+		align-items: center;
+	}
+
+	.head-right {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+	}
+
+	.head-img {
+		display: inline-block;
+		width:100px;
+	} 
+	.hamburger-menu {
+		display:inline-block;
+		font-size: 2em;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	#navigation.mobile-menu-wrapper {
+		transform: translateX(-100%);
+		transition: transform 0.5s ease-in-out;
+		left:0;
+		display: block;
+		top: 0;
+		width: 220px;
+		z-index: 990;
+		height: 100%;
+		background: #fff;
+		border-right: 1px solid rgba(0, 0, 0, 0.15);
+		overflow: auto;
+		-webkit-backface-visibility: hidden;
+	}
+	#navigation.mobile-menu-wrapper.open {
+		transform: translateX(0);
+	}
+	.call-to-action {
+		margin-top: 10px;
+	} 
+	.logomain {
+		display: none;
+	} 
+	.down-arrow {
+		display: block !important;
+		position: absolute !important;
+		bottom: 150px !important;
+		left: 50% !important;
+		transform: translateX(-50%) !important;
+	}
+	.right-column {
+		display: none;
+	}
+	.container {
+		width: 100%;
+	}
+	.left-column {
+		float: none;
+		padding: 0;
+		width: 100%;
+	}
+
+}
