@@ -559,7 +559,7 @@ h1.title {
   margin: 0 auto;
   display: flex;
   margin-top: 1em;
-  width: 1050px;
+  /* width: 1050px; */
 }
 
 .upper {
