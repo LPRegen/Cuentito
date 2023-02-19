@@ -1,0 +1,786 @@
+body {
+  font-family: 'Ubuntu', Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Grid container */
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+
+/* Form column */
+#form-column {
+  grid-column: span 4;
+}
+
+#countbox {
+  position: absolute;
+  bottom: 70px;
+  right: 20px;
+  font-size: 12px;
+}
+
+
+/* Progressbar container */
+.progressbar-container {
+  margin-top: 10em;
+  display: none; /* initially hide the progress bar */
+  top: 1em;
+  overflow: hidden;
+  text-align: center;
+  width: 80%;
+}
+
+#progressbar-container .progressbar-background {
+  background-color: #ddd;
+  height: 10px;
+  width: 100%;
+  position: absolulte;
+  border-radius: 10px;
+  margin-bottom: 4em;
+}
+
+
+.progressbar {
+  width: 0;
+  height: 10px;
+  background: #fff;
+/*transition: width 0.5s ease;*/
+border-radius: 10px;
+margin-bottom: 4em;
+transition: width 0.5s ease-in-out;
+}
+
+.cancel-button {
+  margin-top: 10px;
+  width: 100px;
+  margin: 0 auto;
+  background: #333 !important;
+}
+.message-container {
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+  width: 70%;
+  margin: 2em auto;
+}
+
+
+#chatbox {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Ubuntu', Arial, sans-serif;
+}
+
+.welcome {
+  max-width: 100%;
+  background: rgb(255, 254, 237);
+  border: 1px solid rgb(253, 242, 203);
+  box-shadow: rgb(144 153 166 / 10%) 0px 12px 50px, rgb(144 153 166 / 5%) 0px 4px 24px;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 3em;
+  margin-top: 5em;
+  text-align: left;
+}
+
+.welcome p {
+  width: 100%;
+}
+
+#userInput {
+  height: 300px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px #ccc;
+  resize: none;
+}
+
+.btn-primary {
+  background-color: #343840;
+  border: #343840;
+  color: #fff !important;
+}
+
+.btn-secondary {
+  background-color: #4CAF50; /* Green */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/******************************** LOGIN MODAL *******************************/
+.nsl-container {
+ text-align: center !important;
+}
+.custom-logo {
+  max-width: 150px;
+  display: inline-block;
+}
+.login-modal, .modal {
+  z-index: 999;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.login-modal-content, .modal-content {
+  position: relative;
+  margin: 5% auto;
+  width: 25%;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #000;
+}
+
+.login-modal-header, .modal-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+/******************************** /LOGIN MODAL *******************************/
+
+/******************************** BILLING MODAL *******************************/
+
+.billing-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  overflow: auto;
+}
+
+.billing-modal-title {
+  display: inline-block;
+  font-size: 30px;
+} 
+.billing-modal-content {
+  position: relative;
+  margin: 5% auto;
+  width: 60% !important;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #000;
+}
+
+.billing-modal-header {
+/*display: flex;
+align-items: center;*/
+margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.billing-modal-footer {
+  width: 100%;
+  display: inline-block !important;
+} 
+.mp {
+  background-color: #009ee3;
+  margin-top: 10px;
+  display: inline-block;
+  border-color: transparent;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+} 
+#copy-button-modal {
+  background-color: #333;
+  border-color: transparent;
+  color: #fff;
+  border-radius: 6px;
+  padding-top: 0;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+} 
+
+
+h6 {
+  text-align: center;
+} 
+
+.row {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+} 
+.invite {
+  margin-right: auto;
+}
+
+.upgrade {
+  margin-left: auto;
+} 
+
+
+
+.billing-modal .container {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 2em;
+}
+
+.plan ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2em;
+}
+
+.plan span {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#tooltip {
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  background-color: #555;
+  color: #fff;
+  padding: 5px 10px 0 10px;
+  width: 300px;
+  border-radius: 3px;
+  font-size: 12px;
+  z-index: 1;
+  min-width: 200px;
+  min-height: 20px;
+  height: 33px;
+  text-align: center;
+  transition: opacity 0.3s;
+}  
+.plan .cuentito10 {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+
+
+
+
+/******************************** /BILLING MODAL *******************************/
+
+
+
+
+
+/******************************** SINGLE *******************************/
+/* Images container */
+#images {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Image */
+#image, #image2, #image3 {
+  width: 30%;
+}
+
+.main-container {
+  margin-top: 55px;
+}
+.notice-bar-single {
+ display: block;
+ background-color: #f7f7f7;
+ padding: 15px;
+ text-align: center;
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ z-index: 999;
+ animation: fadeout 20s linear forwards;
+}
+@keyframes fadeout {
+ 0% { opacity: 1; }
+ 100% { opacity: 0; }
+}
+
+
+#print a {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-family: arial, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 40px;
+  font-size: 1rem;
+  line-height: 2rem;
+  position: relative;
+  transition: 0.5s;
+}
+#print a:hover {
+  background: #c11;
+  color: #fff;
+}
+#print a::before,
+#print a::after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  height: 1px;
+}
+#print a::after {
+  bottom: 1px;
+  top: auto;
+}
+
+h1.title { 
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#content {
+  border-radius: 12px;
+  background-color: rgba(255,255,255,0);
+  border:0;
+}
+
+.container {
+  display: flex; /* enables flex layout for the container */
+  flex-wrap: wrap; /* allows flex items to wrap onto multiple rows or columns */
+  justify-content: center; /* centers the flex items along the main axis */
+  align-items: center; /* centers the flex items along the cross axis */
+  height: auto;
+  position: relative;
+}
+
+.row {
+  height: auto;
+  padding: 0 !important;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.col-mid {
+  width: 100%; /* sets the width of each column to 50% */
+  text-align: center; /* centers the text within each column */
+  display: flex; /* Enable flex layout for the columns*/
+  align-items: center; /* Aligns the flex items vertically */
+  justify-content: center; /* Aligns the flex items horizontally */
+  flex-wrap: nowrap;
+}
+
+
+.col-left, .col-right {
+  width: 50%; /* sets the width of each column to 50% */
+  text-align: center; /* centers the text within each column */
+  display: flex; /* Enable flex layout for the columns*/
+  align-items: center; /* Aligns the flex items vertically */
+  justify-content: center; /* Aligns the flex items horizontally */
+  flex-wrap: nowrap;
+}
+
+.col-left {
+  display: inline-block;
+  float: left;
+}
+
+.col-left img {
+  width: 494px;
+  min-height: 494px;
+  float: left;
+}
+
+.col-right img {
+  width: 494px;
+  min-height: 494px;
+  float: left;
+}
+
+
+.col-right {
+  display: inline-block;
+  float: right;
+}
+
+
+.img-mj {
+  height: 494px; /* or any other value that suits your needs */
+  min-width: 479px;
+  width: 100%; /* sets the width of the image to 100% */
+  object-fit: cover; /* ensures that the image fits within the container */
+}
+
+
+.col-mid, .col-right p, .col-left p {
+  width: 100%; /* sets the width of the <p> to 100% */
+  min-width: 80%;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  padding: 1em;
+  padding-bottom: 0;
+  text-align: justify;
+}
+
+.pa {
+  margin-bottom: 0;
+}
+.post-actions {
+  padding: 1em;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  position: relative;
+  float: right;
+  margin-bottom: 2em;
+  width:50%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1.3em;
+}
+
+.pld-like-dislike-wrap {
+  margin-bottom: 0;
+}
+
+#tooltip {
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  background-color: #555;
+  color: #fff;
+  padding: 5px 10px 0 10px;
+  width: 200px;
+  border-radius: 3px;
+  font-size: 12px;
+  z-index: 1;
+  min-width: 200px;
+  min-height: 20px;
+  height: 33px;
+  margin-top:40px;
+  text-align: center;
+  transition: opacity 0.3s;
+}
+
+#copy-button {
+  background: none;
+  border: none;
+  color: #2196f3;
+  display: inline-block;
+  cursor: pointer;
+}
+#caps-button {
+  background: none;
+  border: none;
+  color: #f37e21;
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+}  
+
+.flag-button {
+  background: none;
+  border: none;
+  color: #ff0000;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  color: #ff0000;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.remix {
+  display: inline-block;
+  background: none;
+  border: none;
+  color: #8a4af3;
+  cursor: pointer;
+}
+
+.pld-dislike-trigger {
+  color: #ff9800 !important;
+}
+
+
+.related-posts-thumbnail, .featured-thumbnail-overlay {
+  border-radius: 5px;
+}
+
+.related-posts {
+  border-radius: 10px;
+}
+
+.post-date-landing {
+  margin: 0;
+  font-size: 14px;
+}
+
+.content {
+  margin: 0 auto;
+  display: flex;
+  margin-top: 1em;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.upper p {
+  line-height: 1.4em;
+} 
+#print {
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  width: 300px;
+  overflow: hidden;
+  height: 300px;
+  z-index: 800;
+}
+#print a {
+  position: absolute;
+  top: 3em;
+  right: -8em;
+  width: 26em;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+/******************************** /SINGLE *******************************/
+
+
+/******************************** CATEGORY *******************************/
+article {
+  background: #fff;
+}
+
+.category h2 {
+  font-size: 1.1em;
+}
+
+.masonry-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.masonry-grid-item {
+  width: 33.33%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+
+.cuentitos {
+  border-radius: 10px;
+}
+
+.cuentitos:hover {
+  opacity: .5;
+}
+
+h2 {
+  margin-top: 10px;
+  font-size:1.1em;
+  font-weight: 600;
+}
+
+.postsby {
+  margin-top: 30px !important;
+}
+
+/******************************** /CATEGORY *******************************/
+
+
+/* Media query styles for mobile */
+@media only screen and (max-width: 767px) {
+
+/******************************** LOGIN MODAL *******************************/
+.login-modal-content, .modal-content {
+  width: 95% !important;
+}
+/******************************** /LOGIN MODAL *******************************/
+
+/******************************** BILLING MODAL *******************************/
+
+.billing-modal-content {
+  width: 95% !important;
+} 
+.invite, .upgrade {
+  margin-left: 0;
+  width: 100%;
+}
+.plan {
+  width: 100%;
+  height: auto;
+}
+h6 {
+  margin-top: 2em;
+  padding-top: 1em;
+}
+hr {
+  display: none;
+}
+
+
+/******************************** /BILLING MODAL *******************************/
+
+/******************************** SINGLE *******************************/
+#countbox {
+  bottom: 45px;
+}
+
+#print {
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  width: 300px;
+  overflow: hidden;
+  height: 300px;
+  z-index: 800;
+}
+#print a {
+  position: absolute;
+  top: 3em;
+  right: -8em;
+  width: 26em;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.col-mid, .col-left, .col-right {
+  width: 100%;
+}
+
+.row {
+  flex-direction: column;
+}
+
+.col-right, .col-left {
+  flex-direction: column;
+}
+
+.row.odd .col-left {
+  order: 2;
+}
+
+.row.odd .col-right {
+  order: 1;
+}
+
+.col-right {
+  display: flex;
+  float: none;
+}
+
+.col-left img {
+  width: 100%;
+  min-height: 100%;
+  float: left;
+}
+
+.col-right img {
+  width: 100%;
+  min-height: 100%;
+  float: left;
+}
+
+.img-mj {
+  width: 100%; /* sets the width of the image to 100% */
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  object-fit: cover; /* ensures that the image fits within the container */
+}
+
+.fin {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.post-actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-actions button {
+  margin-right: 15px;
+} 
+
+.remix {
+  margin-top: 10px;
+} 
+
+/******************************** /SINGLE *******************************/
+
+/******************************** CATEGORY *******************************/
+.masonry-grid-item {
+  width: 50%;
+}
+/******************************** /CATEGORY *******************************/
+
+}
+
+@media (max-width: 576px) {
+/******************************** CATEGORY *******************************/
+.masonry-grid-item {
+  width: 100%;
+}
+/******************************** /CATEGORY *******************************/
+}
+
