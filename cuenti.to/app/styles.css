@@ -148,11 +148,15 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  justify-content: space-evenly;
 }
 
 .login-modal-header > h2 {
   text-align: center;
-  width: 100%;
+}
+
+.login-modal-text:first-child {
+  text-align: center;
 }
 
 .logo {
