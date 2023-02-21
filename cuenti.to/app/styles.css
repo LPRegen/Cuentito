@@ -390,7 +390,30 @@ h1.title {
 }
 
 .row {
+  height: auto;
   padding: 0 !important;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.col-mid {
+  width: 100%; /* sets the width of each column to 50% */
+  text-align: center; /* centers the text within each column */
+  display: flex; /* Enable flex layout for the columns*/
+  align-items: center; /* Aligns the flex items vertically */
+  justify-content: center; /* Aligns the flex items horizontally */
+  flex-wrap: nowrap;
+}
+
+.col-left,
+.col-right {
+  width: 50%; /* sets the width of each column to 50% */
+  text-align: center; /* centers the text within each column */
+  display: flex; /* Enable flex layout for the columns*/
+  align-items: center; /* Aligns the flex items vertically */
+  justify-content: center; /* Aligns the flex items horizontally */
+  flex-wrap: nowrap;
 }
 
 .col-left {
