@@ -187,7 +187,7 @@ body {
 .billing-modal-content {
   position: relative;
   margin: 5% auto;
-  width: 60% !important;
+  width: 70% !important;
   background: #fff;
   padding: 20px;
   box-shadow: 0px 0px 10px #000;
@@ -227,7 +227,6 @@ body {
   border-color: transparent;
   color: #fff;
   border-radius: 6px;
-  padding-top: 0;
   padding: 10px;
   margin-bottom: 10px;
   font-size: 16px !important;
@@ -267,18 +266,21 @@ h6 {
 }
 
 .plan ul {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 1rem;
   width: 100%;
   padding: 0;
   margin: 0;
-  margin-bottom: 2em;
 }
 
 .plan span {
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
+}
+
+.plan span:last-child {
+  margin-top: 2rem;
 }
 
 #tooltip {
@@ -473,25 +475,6 @@ h1.title {
   margin-bottom: 0;
 }
 
-#tooltip {
-  opacity: 0;
-  visibility: hidden;
-  position: relative;
-  background-color: #555;
-  color: #fff;
-  padding: 5px 10px 0 10px;
-  width: 200px;
-  border-radius: 3px;
-  font-size: 12px;
-  z-index: 1;
-  min-width: 200px;
-  min-height: 20px;
-  height: 33px;
-  margin-top: 40px;
-  text-align: center;
-  transition: opacity 0.3s;
-}
-
 #copy-button {
   background: none;
   border: none;
@@ -626,6 +609,11 @@ h2 {
   margin-top: 30px !important;
 }
 
+hr {
+    display: none;
+  }
+
+
 /******************************** /CATEGORY *******************************/
 
 /* Media query styles for mobile */
@@ -639,9 +627,6 @@ h2 {
 
   /******************************** BILLING MODAL *******************************/
 
-  .billing-modal-content {
-    width: 95% !important;
-  }
   .invite,
   .upgrade {
     margin-left: 0;
@@ -652,13 +637,9 @@ h2 {
     height: auto;
   }
   h6 {
-    margin-top: 2em;
-    padding-top: 1em;
+    margin: 2em 0 !important;
   }
-  hr {
-    display: none;
-  }
-
+  
   /******************************** /BILLING MODAL *******************************/
 
   /******************************** SINGLE *******************************/
@@ -766,9 +747,19 @@ h2 {
   /******************************** /CATEGORY *******************************/
 }
 
+@media only screen and (min-width: 768px) {
+  .plan {
+    width: 33%;
+  }
+
+  h6 {
+    margin: 2em 0 !important;
+  }
+}
+
 @media only screen and (max-width: 1280px) {
   .billing-modal-content {
-    width: 75% !important;
+    width: 95% !important;
   }
 }
 
