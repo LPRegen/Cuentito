@@ -260,17 +260,13 @@ h6 {
 .plan {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  justify-content: start;
   padding: 2em;
 }
 
 .plan ul {
   display: grid;
-  gap: 1rem;
-  width: 100%;
-  padding: 0;
-  margin: 0;
+  gap: 0.8rem;
 }
 
 .plan span {
@@ -394,30 +390,7 @@ h1.title {
 }
 
 .row {
-  height: auto;
   padding: 0 !important;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-}
-
-.col-mid {
-  width: 100%; /* sets the width of each column to 50% */
-  text-align: center; /* centers the text within each column */
-  display: flex; /* Enable flex layout for the columns*/
-  align-items: center; /* Aligns the flex items vertically */
-  justify-content: center; /* Aligns the flex items horizontally */
-  flex-wrap: nowrap;
-}
-
-.col-left,
-.col-right {
-  width: 50%; /* sets the width of each column to 50% */
-  text-align: center; /* centers the text within each column */
-  display: flex; /* Enable flex layout for the columns*/
-  align-items: center; /* Aligns the flex items vertically */
-  justify-content: center; /* Aligns the flex items horizontally */
-  flex-wrap: nowrap;
 }
 
 .col-left {
@@ -610,9 +583,8 @@ h2 {
 }
 
 hr {
-    display: none;
-  }
-
+  display: none;
+}
 
 /******************************** /CATEGORY *******************************/
 
@@ -639,7 +611,7 @@ hr {
   h6 {
     margin: 2em 0 !important;
   }
-  
+
   /******************************** /BILLING MODAL *******************************/
 
   /******************************** SINGLE *******************************/
@@ -750,6 +722,12 @@ hr {
 @media only screen and (min-width: 768px) {
   .plan {
     width: 33%;
+    gap: 1rem;
+  }
+
+  .plan span:last-child {
+    margin-top: auto;
+    padding-top: 2rem;
   }
 
   h6 {
