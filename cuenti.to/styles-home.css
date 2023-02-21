@@ -241,6 +241,11 @@ section.newsletter {
 	vertical-align: top;
 }
 
+#navigation {
+  display: flex;
+  justify-content: end;
+}
+
 @media only screen and (max-width: 767px) {
 	.image-logo {
 		display: block;
