@@ -313,11 +313,6 @@ h6 {
   justify-content: space-between;
 }
 
-/* Image */
-#image, #image2, #image3 {
-  width: 30%;
-}
-
 .main-container {
   margin-top: 55px;
 }
@@ -421,32 +416,25 @@ h1.title {
 
 .col-left {
   display: inline-block;
-  float: left;
 }
 
 .col-left img {
-  width: 494px;
-  min-height: 494px;
   float: left;
 }
 
 .col-right img {
-  width: 494px;
-  min-height: 494px;
   float: left;
 }
 
 
 .col-right {
   display: inline-block;
-  float: right;
 }
 
 
 .img-mj {
-  height: 494px; /* or any other value that suits your needs */
-  min-width: 479px;
-  width: 100%; /* sets the width of the image to 100% */
+  max-height: 100%;
+  max-width: 100%; /* sets the width of the image to 100% */
   object-fit: cover; /* ensures that the image fits within the container */
 }
 
