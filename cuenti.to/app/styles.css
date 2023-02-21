@@ -295,6 +295,7 @@ h6 {
   height: 33px;
   text-align: center;
   transition: opacity 0.3s;
+  margin-top: 1rem;
 }
 .plan .cuentito10 {
   text-align: center;
@@ -453,22 +454,20 @@ h1.title {
 .pa {
   margin-bottom: 0;
 }
+
 .post-actions {
   padding: 1em;
-  background: #fff;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  position: relative;
-  float: right;
-  margin-bottom: 2em;
-  width: 50%;
+  width: 60%;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  padding-right: 1.3em;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.pld-like-dislike-wrap {
-  margin-bottom: 0;
+.post-actions > form > button {
+  padding: 0.5rem;
 }
 
 #copy-button {
@@ -477,7 +476,9 @@ h1.title {
   color: #2196f3;
   display: inline-block;
   cursor: pointer;
+  padding: 0.5rem;
 }
+
 #caps-button {
   background: none;
   border: none;
@@ -485,6 +486,7 @@ h1.title {
   font-weight: bold;
   display: inline-block;
   cursor: pointer;
+  padding: 0.5rem;
 }
 
 .flag-button {
@@ -493,6 +495,7 @@ h1.title {
   color: #ff0000;
   display: inline-block;
   cursor: pointer;
+  padding: 0.5rem;
 }
 
 .delete-button {
@@ -501,10 +504,10 @@ h1.title {
   color: #ff0000;
   display: inline-block;
   cursor: pointer;
+  padding: 0.5rem;
 }
 
 .remix {
-  display: inline-block;
   background: none;
   border: none;
   color: #8a4af3;
@@ -522,11 +525,6 @@ h1.title {
 
 .related-posts {
   border-radius: 10px;
-}
-
-.post-date-landing {
-  margin: 0;
-  font-size: 14px;
 }
 
 .content {
@@ -723,14 +721,6 @@ hr {
     width: 100%;
     display: flex;
     justify-content: space-between;
-  }
-
-  .post-actions button {
-    margin-right: 15px;
-  }
-
-  .remix {
-    margin-top: 10px;
   }
 
   /******************************** /SINGLE *******************************/
