@@ -490,6 +490,8 @@ textarea {
 }
 #page,
 .container {
+    max-width: 1050px;
+    min-width: 240px;
     overflow: visible;
     margin: 0 auto;
     position: relative;
@@ -503,6 +505,11 @@ textarea {
     float: none;
     clear: both;
 }
+
+.text-center {
+    display: grid;
+    margin-top: 2em;
+  }
 /*-[ Header ]-----------------------*/
 
 
@@ -541,11 +548,9 @@ a#pull {
     display: none
 }
 .primary-navigation {
-    background: #1b1b1b;
     display: block;
     clear: both;
     width: 100%;
-    max-width: 100%;
     margin: 0 auto;
     min-height: 65px; 
 }
@@ -765,7 +770,6 @@ span.sticky-post {
     background:#fff;
 }
 #content {
-    display: grid;
     background:#fff;
     padding:20px 30px;
     margin-bottom:10px;
@@ -2651,16 +2655,6 @@ img.custom-logo {
 .related-posts-no-img, #navigation ul li.current-menu-item a, .woocommerce nav.woocommerce-pagination ul li span.current, .woocommerce-page nav.woocommerce-pagination ul li span.current, .woocommerce #content nav.woocommerce-pagination ul li span.current, .woocommerce-page #content nav.woocommerce-pagination ul li span.current, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce-page nav.woocommerce-pagination ul li a:hover, .woocommerce #content nav.woocommerce-pagination ul li a:hover, .woocommerce-page #content nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce-page nav.woocommerce-pagination ul li a:focus, .woocommerce #content nav.woocommerce-pagination ul li a:focus, .woocommerce-page #content nav.woocommerce-pagination ul li a:focus, .pagination .current, .tagcloud a { border-color: #00d79b; }
 .corner { border-color: transparent transparent #00d79b transparent;}
 
-
-
-@media screen and (max-width: 1100px) {
-    #page,
-    .container,
-    .site-branding {
-        max-width: 96%
-    }
-}
-
 @media screen and (min-width: 866px) {
     .primary-navigation.header-activated,
     .header-activated .primary-navigation {
@@ -2676,11 +2670,7 @@ img.custom-logo {
         display: none
     }
 
-    .primary-navigation.header-activated #navigation a {   
-        color:#fff;
-        font-weight:400;
-    }
-    .primary-navigation.header-activated #navigation ul ul li a{   
+       .primary-navigation.header-activated #navigation ul ul li a{   
         color:#333;
     }
     
@@ -2731,7 +2721,7 @@ img.custom-logo {
     }
 }
 
-@media screen and (max-width: 865px) {
+@media screen and (max-width: 767px) {
     #navigation.mobile-menu-wrapper .site-logo a {
         border-bottom: 1px solid rgba(51, 51, 51, 0.08);
         font-weight: 600;
@@ -2782,11 +2772,6 @@ img.custom-logo {
         padding: 0 2%
     }
 
-    #navigation {
-        width: 100%;
-        border: none;
-        display: none;
-    }
     #navigation .menu a,
     #navigation .menu .fa > a,
     #navigation .menu .fa > a {
@@ -2795,12 +2780,8 @@ img.custom-logo {
         background: transparent;
         margin-left: 0!important;
     }
-    #navigation .menu {
-        display: block!important;
-        background: transparent;
-        float: left;
-    }
-    #navigation ul ul {
+
+   #navigation ul ul {
         visibility: visible!important;
         opacity: 1!important;
         position: relative;

@@ -1,5 +1,5 @@
 body {
-  font-family: "Ubuntu", Arial, sans-serif;
+  font-family: 'Ubuntu', Arial, sans-serif;
   font-size: 14px;
 }
 
@@ -23,6 +23,7 @@ body {
   font-size: 12px;
 }
 
+
 /* Progressbar container */
 .progressbar-container {
   margin-top: 10em;
@@ -42,14 +43,15 @@ body {
   margin-bottom: 4em;
 }
 
+
 .progressbar {
   width: 0;
   height: 10px;
   background: #fff;
-  /*transition: width 0.5s ease;*/
-  border-radius: 10px;
-  margin-bottom: 4em;
-  transition: width 0.5s ease-in-out;
+/*transition: width 0.5s ease;*/
+border-radius: 10px;
+margin-bottom: 4em;
+transition: width 0.5s ease-in-out;
 }
 
 .cancel-button {
@@ -66,19 +68,19 @@ body {
   margin: 2em auto;
 }
 
+
 #chatbox {
   width: 50%;
   margin: 0 auto;
   text-align: center;
-  font-family: "Ubuntu", Arial, sans-serif;
+  font-family: 'Ubuntu', Arial, sans-serif;
 }
 
 .welcome {
   max-width: 100%;
   background: rgb(255, 254, 237);
   border: 1px solid rgb(253, 242, 203);
-  box-shadow: rgb(144 153 166 / 10%) 0px 12px 50px,
-    rgb(144 153 166 / 5%) 0px 4px 24px;
+  box-shadow: rgb(144 153 166 / 10%) 0px 12px 50px, rgb(144 153 166 / 5%) 0px 4px 24px;
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 3em;
@@ -108,21 +110,20 @@ body {
 }
 
 .btn-secondary {
-  background-color: #4caf50; /* Green */
+  background-color: #4CAF50; /* Green */
   padding: 10px;
   border-radius: 5px;
 }
 
 /******************************** LOGIN MODAL *******************************/
 .nsl-container {
-  text-align: center !important;
+ text-align: center !important;
 }
 .custom-logo {
   max-width: 150px;
   display: inline-block;
 }
-.login-modal,
-.modal {
+.login-modal, .modal {
   z-index: 999;
   display: none;
   position: fixed;
@@ -133,8 +134,7 @@ body {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.login-modal-content,
-.modal-content {
+.login-modal-content, .modal-content {
   position: relative;
   margin: 5% auto;
   width: 25%;
@@ -143,8 +143,7 @@ body {
   box-shadow: 0px 0px 10px #000;
 }
 
-.login-modal-header,
-.modal-header {
+.login-modal-header, .modal-header {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -174,7 +173,7 @@ body {
 .billing-modal-title {
   display: inline-block;
   font-size: 30px;
-}
+} 
 .billing-modal-content {
   position: relative;
   margin: 5% auto;
@@ -185,9 +184,9 @@ body {
 }
 
 .billing-modal-header {
-  /*display: flex;
+/*display: flex;
 align-items: center;*/
-  margin-bottom: 20px;
+margin-bottom: 20px;
 }
 
 .logo {
@@ -199,7 +198,7 @@ align-items: center;*/
 .billing-modal-footer {
   width: 100%;
   display: inline-block !important;
-}
+} 
 .mp {
   background-color: #009ee3;
   margin-top: 10px;
@@ -210,9 +209,8 @@ align-items: center;*/
   padding: 10px;
   font-size: 16px !important;
   font-weight: 500 !important;
-  font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto,
-    Arial, sans-serif;
-}
+  font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+} 
 #copy-button-modal {
   background-color: #333;
   border-color: transparent;
@@ -223,26 +221,28 @@ align-items: center;*/
   margin-bottom: 10px;
   font-size: 16px !important;
   font-weight: 500 !important;
-  font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto,
-    Arial, sans-serif;
-}
+  font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+} 
+
 
 h6 {
   text-align: center;
-}
+} 
 
 .row {
   padding: 1em;
   display: flex;
   justify-content: space-between;
-}
+} 
 .invite {
   margin-right: auto;
 }
 
 .upgrade {
   margin-left: auto;
-}
+} 
+
+
 
 .billing-modal .container {
   display: flex;
@@ -288,7 +288,7 @@ h6 {
   height: 33px;
   text-align: center;
   transition: opacity 0.3s;
-}
+}  
 .plan .cuentito10 {
   text-align: center;
   font-size: 1.5em;
@@ -296,7 +296,15 @@ h6 {
   margin-top: 1em;
 }
 
+
+
+
+
 /******************************** /BILLING MODAL *******************************/
+
+
+
+
 
 /******************************** SINGLE *******************************/
 /* Images container */
@@ -306,9 +314,7 @@ h6 {
 }
 
 /* Image */
-#image,
-#image2,
-#image3 {
+#image, #image2, #image3 {
   width: 30%;
 }
 
@@ -316,25 +322,22 @@ h6 {
   margin-top: 55px;
 }
 .notice-bar-single {
-  display: block;
-  background-color: #f7f7f7;
-  padding: 15px;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  animation: fadeout 20s linear forwards;
+ display: block;
+ background-color: #f7f7f7;
+ padding: 15px;
+ text-align: center;
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ z-index: 999;
+ animation: fadeout 20s linear forwards;
 }
 @keyframes fadeout {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+ 0% { opacity: 1; }
+ 100% { opacity: 0; }
 }
+
 
 #print a {
   background: #000;
@@ -368,7 +371,7 @@ h6 {
   top: auto;
 }
 
-h1.title {
+h1.title { 
   margin-top: 10px;
   margin-bottom: 20px;
   text-align: center;
@@ -376,17 +379,17 @@ h1.title {
 
 #content {
   border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0);
-  border: 0;
+  background-color: rgba(255,255,255,0);
+  border:0;
 }
 
 .container {
   display: flex; /* enables flex layout for the container */
   flex-wrap: wrap; /* allows flex items to wrap onto multiple rows or columns */
-  /* justify-content: center; */ /* centers the flex items along the main axis */
-  /* align-items: center; */ /* centers the flex items along the cross axis */
-  /* height: auto; */
-  /* position: relative; */
+  justify-content: center; /* centers the flex items along the main axis */
+  align-items: center; /* centers the flex items along the cross axis */
+  height: auto;
+  position: relative;
 }
 
 .row {
@@ -406,8 +409,8 @@ h1.title {
   flex-wrap: nowrap;
 }
 
-.col-left,
-.col-right {
+
+.col-left, .col-right {
   width: 50%; /* sets the width of each column to 50% */
   text-align: center; /* centers the text within each column */
   display: flex; /* Enable flex layout for the columns*/
@@ -433,10 +436,12 @@ h1.title {
   float: left;
 }
 
+
 .col-right {
   display: inline-block;
   float: right;
 }
+
 
 .img-mj {
   height: 494px; /* or any other value that suits your needs */
@@ -445,9 +450,8 @@ h1.title {
   object-fit: cover; /* ensures that the image fits within the container */
 }
 
-.col-mid,
-.col-right p,
-.col-left p {
+
+.col-mid, .col-right p, .col-left p {
   width: 100%; /* sets the width of the <p> to 100% */
   min-width: 80%;
   font-size: 1.5em;
@@ -468,7 +472,7 @@ h1.title {
   position: relative;
   float: right;
   margin-bottom: 2em;
-  width: 50%;
+  width:50%;
   display: flex;
   justify-content: space-between;
   padding-right: 1.3em;
@@ -492,7 +496,7 @@ h1.title {
   min-width: 200px;
   min-height: 20px;
   height: 33px;
-  margin-top: 40px;
+  margin-top:40px;
   text-align: center;
   transition: opacity 0.3s;
 }
@@ -511,7 +515,7 @@ h1.title {
   font-weight: bold;
   display: inline-block;
   cursor: pointer;
-}
+}  
 
 .flag-button {
   background: none;
@@ -541,8 +545,8 @@ h1.title {
   color: #ff9800 !important;
 }
 
-.related-posts-thumbnail,
-.featured-thumbnail-overlay {
+
+.related-posts-thumbnail, .featured-thumbnail-overlay {
   border-radius: 5px;
 }
 
@@ -559,6 +563,7 @@ h1.title {
   margin: 0 auto;
   display: flex;
   margin-top: 1em;
+  width: 1050px;
 }
 
 .upper {
@@ -567,7 +572,7 @@ h1.title {
 
 .upper p {
   line-height: 1.4em;
-}
+} 
 #print {
   position: fixed;
   display: block;
@@ -593,6 +598,7 @@ h1.title {
 
 /******************************** /SINGLE *******************************/
 
+
 /******************************** CATEGORY *******************************/
 article {
   background: #fff;
@@ -613,17 +619,18 @@ article {
   box-sizing: border-box;
 }
 
+
 .cuentitos {
   border-radius: 10px;
 }
 
 .cuentitos:hover {
-  opacity: 0.5;
+  opacity: .5;
 }
 
 h2 {
   margin-top: 10px;
-  font-size: 1.1em;
+  font-size:1.1em;
   font-weight: 600;
 }
 
@@ -633,148 +640,148 @@ h2 {
 
 /******************************** /CATEGORY *******************************/
 
+
 /* Media query styles for mobile */
 @media only screen and (max-width: 767px) {
-  /******************************** LOGIN MODAL *******************************/
-  .login-modal-content,
-  .modal-content {
-    width: 95% !important;
-  }
-  /******************************** /LOGIN MODAL *******************************/
 
-  /******************************** BILLING MODAL *******************************/
+/******************************** LOGIN MODAL *******************************/
+.login-modal-content, .modal-content {
+  width: 95% !important;
+}
+/******************************** /LOGIN MODAL *******************************/
 
-  .billing-modal-content {
-    width: 95% !important;
-  }
-  .invite,
-  .upgrade {
-    margin-left: 0;
-    width: 100%;
-  }
-  .plan {
-    width: 100%;
-    height: auto;
-  }
-  h6 {
-    margin-top: 2em;
-    padding-top: 1em;
-  }
-  hr {
-    display: none;
-  }
+/******************************** BILLING MODAL *******************************/
 
-  /******************************** /BILLING MODAL *******************************/
+.billing-modal-content {
+  width: 95% !important;
+} 
+.invite, .upgrade {
+  margin-left: 0;
+  width: 100%;
+}
+.plan {
+  width: 100%;
+  height: auto;
+}
+h6 {
+  margin-top: 2em;
+  padding-top: 1em;
+}
+hr {
+  display: none;
+}
 
-  /******************************** SINGLE *******************************/
-  #countbox {
-    bottom: 45px;
-  }
 
-  #print {
-    position: fixed;
-    display: block;
-    top: 0;
-    right: 0;
-    width: 300px;
-    overflow: hidden;
-    height: 300px;
-    z-index: 800;
-  }
-  #print a {
-    position: absolute;
-    top: 3em;
-    right: -8em;
-    width: 26em;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
-  }
+/******************************** /BILLING MODAL *******************************/
 
-  .col-mid,
-  .col-left,
-  .col-right {
-    width: 100%;
-  }
+/******************************** SINGLE *******************************/
+#countbox {
+  bottom: 45px;
+}
 
-  .row {
-    flex-direction: column;
-  }
+#print {
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  width: 300px;
+  overflow: hidden;
+  height: 300px;
+  z-index: 800;
+}
+#print a {
+  position: absolute;
+  top: 3em;
+  right: -8em;
+  width: 26em;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+}
 
-  .col-right,
-  .col-left {
-    flex-direction: column;
-  }
+.col-mid, .col-left, .col-right {
+  width: 100%;
+}
 
-  .row.odd .col-left {
-    order: 2;
-  }
+.row {
+  flex-direction: column;
+}
 
-  .row.odd .col-right {
-    order: 1;
-  }
+.col-right, .col-left {
+  flex-direction: column;
+}
 
-  .col-right {
-    display: flex;
-    float: none;
-  }
+.row.odd .col-left {
+  order: 2;
+}
 
-  .col-left img {
-    width: 100%;
-    min-height: 100%;
-    float: left;
-  }
+.row.odd .col-right {
+  order: 1;
+}
 
-  .col-right img {
-    width: 100%;
-    min-height: 100%;
-    float: left;
-  }
+.col-right {
+  display: flex;
+  float: none;
+}
 
-  .img-mj {
-    width: 100%; /* sets the width of the image to 100% */
-    min-width: 100%;
-    height: 100%;
-    min-height: 100%;
-    object-fit: cover; /* ensures that the image fits within the container */
-  }
+.col-left img {
+  width: 100%;
+  min-height: 100%;
+  float: left;
+}
 
-  .fin {
-    display: flex;
-    text-align: center;
-    margin: 0 auto;
-  }
+.col-right img {
+  width: 100%;
+  min-height: 100%;
+  float: left;
+}
 
-  .post-actions {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
+.img-mj {
+  width: 100%; /* sets the width of the image to 100% */
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  object-fit: cover; /* ensures that the image fits within the container */
+}
 
-  .post-actions button {
-    margin-right: 15px;
-  }
+.fin {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+}
 
-  .remix {
-    margin-top: 10px;
-  }
+.post-actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 
-  /******************************** /SINGLE *******************************/
+.post-actions button {
+  margin-right: 15px;
+} 
 
-  /******************************** CATEGORY *******************************/
-  .masonry-grid-item {
-    width: 50%;
-  }
-  /******************************** /CATEGORY *******************************/
+.remix {
+  margin-top: 10px;
+} 
+
+/******************************** /SINGLE *******************************/
+
+/******************************** CATEGORY *******************************/
+.masonry-grid-item {
+  width: 50%;
+}
+/******************************** /CATEGORY *******************************/
+
 }
 
 @media (max-width: 576px) {
-  /******************************** CATEGORY *******************************/
-  .masonry-grid-item {
-    width: 100%;
-  }
-  /******************************** /CATEGORY *******************************/
+/******************************** CATEGORY *******************************/
+.masonry-grid-item {
+  width: 100%;
 }
+/******************************** /CATEGORY *******************************/
+}
+
