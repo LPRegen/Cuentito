@@ -17,11 +17,10 @@ body {
 }
 
 #countbox {
-  position: absolute;
-  bottom: 70px;
-  right: 20px;
   font-size: 12px;
+  margin: 0.5rem 0;
 }
+
 
 /* Progressbar container */
 .progressbar-container {
@@ -102,9 +101,17 @@ body {
 }
 
 .btn-primary {
-  background-color: #343840;
-  border: #343840;
+  background-color: #007bff;
+  border-color: #007bff;
   color: #fff !important;
+  width: 100%;
+  border-radius: 0.25em;
+  padding: 0.375em 0.75em;
+  font-size: 1rem;
+}
+
+.btn-primary:disabled {
+  opacity: 0.65;
 }
 
 .btn-secondary {
@@ -197,7 +204,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 .logo {
@@ -209,6 +216,7 @@ body {
   width: 100%;
   display: inline-block !important;
 }
+
 .mp {
   background-color: #009ee3;
   margin-top: 10px;
@@ -261,12 +269,13 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  padding: 2em;
+  padding: 1em 2em;
 }
 
 .plan ul {
   display: grid;
-  gap: 0.8rem;
+  gap: 0.4rem;
+  list-style-type: none;
 }
 
 .plan span {
@@ -295,7 +304,7 @@ h6 {
   height: 33px;
   text-align: center;
   transition: opacity 0.3s;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .plan .cuentito10 {
   text-align: center;
@@ -735,16 +744,12 @@ hr {
 @media only screen and (min-width: 768px) {
   .plan {
     width: 33%;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   .plan span:last-child {
     margin-top: auto;
     padding-top: 2rem;
-  }
-
-  h6 {
-    margin: 2em 0 !important;
   }
 }
 
