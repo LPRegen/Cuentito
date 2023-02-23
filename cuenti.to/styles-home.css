@@ -88,14 +88,15 @@ h2 {
 }
 .call-to-action {
   margin: 1em 15px 1.5em 15px !important;
-	padding: 20px 50px !important;
-	background-color: #333 !important;
-	border: 0 !important;
-	color: #fff !important;
-	font-size: 18px !important;
-	border-radius: 15px !important;
-	cursor: pointer !important; 
+  padding: 20px 50px !important;
+  background-color: #333 !important;
+  border: 0 !important;
+  color: #fff !important;
+  font-size: 18px !important;
+  border-radius: 15px !important;
+  cursor: pointer !important;
 }
+
 .section-title {
 	text-align: center;
 	margin: 50px 0;
@@ -174,7 +175,6 @@ section.newsletter {
 	background: #333;
 	padding-top: 2em;
 	padding-bottom: 2em;
-
 }  
 
 .down-arrow {
