@@ -459,6 +459,14 @@ h1.title {
   text-align: justify;
 }
 
+.col-left p {
+  padding-right: 1em;
+}
+
+.col-right p {
+  padding-left: 1em;
+}
+
 .pa {
   margin-bottom: 0;
 }
