@@ -149,7 +149,7 @@ h1 {
 
 .first-row {
 	z-index: 1;
-	height: 89vh;
+	height: auto;
 	display: flex;
 	position: relative; /* add this to make the down arrow position absolute within the first-row */
 }
@@ -163,7 +163,11 @@ h1 {
 
 .left-column, .right-column{
 	flex: 1; /* each column will take up equal space within the first-row */
-	height: 100%; /* make each column 100% height of the first-row */
+	/* height: 100%; */ /* make each column 100% height of the first-row */
+}
+
+.login-link {
+  top: 0 !important;
 }
 
 section.newsletter {
