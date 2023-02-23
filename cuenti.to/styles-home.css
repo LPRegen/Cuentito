@@ -200,9 +200,8 @@ section.newsletter {
 .carousel-caption {
 	background: rgba(0,0,0,0.8);
 	width: 512px;
-	margin: 0 auto;
 	padding: 1em;
-	bottom: 0;
+	bottom: 0 !important;
 } 
 
 .footer {
