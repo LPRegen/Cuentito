@@ -480,6 +480,7 @@ h1.title {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 2em;
 }
 
 .post-actions > form > button {
