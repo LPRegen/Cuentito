@@ -87,7 +87,7 @@ h2 {
 	font-size: 18px;
 }
 .call-to-action {
-	margin-top: 1em !important;
+  margin: 1em 15px 1.5em 15px !important;
 	padding: 20px 50px !important;
 	background-color: #333 !important;
 	border: 0 !important;
