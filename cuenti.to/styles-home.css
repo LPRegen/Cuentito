@@ -74,20 +74,27 @@ h2 {
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 } 
+
 .how {
 	background: #fff;
 	padding-top: 2em;
 	padding-bottom: 2em;
 } 
+
 .how p {
 	text-align: justify;
 } 
+
+.how .call-to-action {
+  margin: 1.5em 15px 1.5em 15px !important;
+}
+
 .subtitle {
 	margin-top: 20px;
 	font-size: 18px;
 }
+
 .call-to-action {
-  margin: 1em 15px 1.5em 15px !important;
   padding: 20px 50px !important;
   background-color: #333 !important;
   border: 0 !important;
