@@ -183,7 +183,11 @@ body {
   padding: 1rem;
   font-size: 15px;
   color: #555555;
-font-family: "Open Sans", "helvetica neue", helvetica, arial, sans-serif;
+  font-family: "Open Sans", "helvetica neue", helvetica, arial, sans-serif;
+}
+
+.modal-text, .login-modal-text {
+  text-align: center;
 }
 
 .login-modal-text p:first-of-type {
@@ -797,6 +801,11 @@ hr {
 @media only screen and (min-width: 1281px) {
   .billing-modal-content {
     width: 85%;
+  }
+
+  .login-modal-content,
+  .modal-content {
+    width: 35%;
   }
 }
 
