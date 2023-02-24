@@ -526,6 +526,41 @@ pre code {
   .container {
     max-width: 1140px;
   }
+
+  .footer .container {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .footer .container .row .col-md-4 {
+    width: auto;
+    flex: 0 0 auto;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .footer .container .row .col-md-4:nth-child(2) {
+    padding: 0 1em;
+  }
+
+  .footer .container .row {
+    width: 1200px !important;
+    justify-content: start;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .footer .container .row .col-md-4 ul {
+    display: flex;
+    gap: 1rem;
+    width: fit-content;
+  }
+
+  .menu-footer {
+    width: max-content;
+  }
 }
 .container-fluid {
   width: 100%;
