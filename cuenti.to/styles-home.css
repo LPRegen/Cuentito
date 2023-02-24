@@ -224,7 +224,15 @@ section.newsletter {
 
 .menu-footer a, .menu-top a {
 	color: #fff;
-} 
+}
+
+.footer .row {
+  width: 100%;
+}
+
+.footer li {
+  margin: 0.4em 0;
+}
 
 .menu-top {
 	float: right;
