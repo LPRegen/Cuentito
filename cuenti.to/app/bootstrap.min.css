@@ -511,15 +511,16 @@ pre code {
   .container {
     max-width: 720px;
   }
-}
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
 
   .how .call-to-action {
     width: 33.33%;
     margin: 1.5em auto 1.5em auto !important;
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
