@@ -37,7 +37,6 @@ body {
   background-color: #ddd;
   height: 10px;
   width: 100%;
-  position: absolulte;
   border-radius: 10px;
   margin-bottom: 4em;
 }
@@ -60,9 +59,7 @@ body {
 .message-container {
   color: #fff;
   font-size: 1.5em;
-  width: fit-content;
   max-width: 350px;
-  display: grid;
   margin: 2em auto;
 }
 
@@ -791,7 +788,7 @@ hr {
   }
 
   .message-container {
-    max-width: 550px;
+    min-width: 550px;
   }
 }
 
