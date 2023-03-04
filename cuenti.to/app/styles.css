@@ -651,6 +651,10 @@ hr {
   margin: 3em 0;
 }
 
+.pld-like-dislike-wrap {
+  margin-bottom: 0 !important;
+}
+
 /******************************** /CATEGORY *******************************/
 
 /* Media query styles for mobile */
