@@ -39,12 +39,15 @@ body {
   background: linear-gradient(44deg, #e3a74d 0%, #e9cf97 100%);
   font-family: "Epilogue", Arial, Helvetica, "sans-serif";
 }
+
 .left-column {
   text-align: center;
   padding-top: 0;
   padding: 50px;
 }
+
 #right-column {
+  display: none;
   text-align: center;
   padding: 50px;
   opacity: 0.8;
@@ -54,6 +57,7 @@ body {
   background-repeat: no-repeat;
   transition: background-image 1s ease-in-out;
 }
+
 .logomain {
   width: 200px;
   height: 200px;
@@ -331,9 +335,7 @@ section.newsletter {
     left: 50% !important;
     transform: translateX(-50%) !important;
   }
-  .right-column {
-    display: none;
-  }
+
   .container {
     width: 100%;
   }
@@ -360,6 +362,10 @@ section.newsletter {
 }
 
 @media (min-width: 1200px) {
+  #right-column {
+    display: block;
+  }
+
   .footer .container {
     display: flex;
     justify-content: center;
