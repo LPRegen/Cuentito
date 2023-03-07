@@ -163,11 +163,12 @@ h1 {
 
 .down-arrow {
   position: absolute; /* position absolute within the first-row */
-  bottom: 20px; /* distance from bottom of first-row */
+  bottom: 1em; /* distance from bottom of first-row */
   left: 50%; /* center horizontally within first-row */
   transform: translateX(
     -50%
   ); /* this moves the down arrow to the left 50% of its width to center it within the first-row */
+  padding: 1em;
 }
 
 .left-column,
