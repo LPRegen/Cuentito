@@ -793,6 +793,8 @@ hr {
   .plan {
     width: 33%;
     gap: 0.5rem;
+    height: inherit;
+    align-self: auto;
   }
 
   .plan span:last-child {
