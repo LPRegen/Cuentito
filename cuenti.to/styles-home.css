@@ -1,3 +1,7 @@
+a:link {
+  -webkit-tap-highlight-color: transparent;
+}
+
 a.mp:hover {
   color: #fff;
 }
@@ -356,7 +360,7 @@ section.newsletter {
 }
 
 @media (min-width: 1200px) {
-    h2 {
+  h2 {
     font-size: 26px;
   }
 
