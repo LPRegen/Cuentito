@@ -439,7 +439,7 @@ h1.title {
   text-align: center; /* centers the text within each column */
   display: flex; /* Enable flex layout for the columns*/
   align-items: center; /* Aligns the flex items vertically */
-  justify-content: center; /* Aligns the flex items horizontally */
+  /* justify-content: center; Aligns the flex items horizontally */
   flex-wrap: nowrap;
 }
 
@@ -475,6 +475,14 @@ h1.title {
   object-fit: cover; /* ensures that the image fits within the container */
 }
 
+.img-mj-full {
+  max-height: 100%;
+  max-width: 100%; /* sets the width of the image to 100% */
+  object-fit: cover; /* ensures that the image fits within the container */
+  margin: auto;
+  display: flex;
+}
+
 .col-mid,
 .col-right p,
 .col-left p {
@@ -483,7 +491,7 @@ h1.title {
   font-size: 1.5em;
   line-height: 1.2em;
   padding: 1em 0em;
-  text-align: justify;
+  text-align: left;
 }
 
 .col-left p {
