@@ -333,6 +333,10 @@ section.newsletter {
     padding: 20px 0 30px;
     width: 100%;
   }
+
+  .container > .row {
+    margin: 0 0 !important;
+  }
 }
 
 /**** Overrides Bootstrap ****/
