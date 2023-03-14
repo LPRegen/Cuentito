@@ -165,17 +165,12 @@ h1 {
 .first-row {
   z-index: 1;
   height: auto;
-  display: flex;
-  position: relative; /* add this to make the down arrow position absolute within the first-row */
+  display: grid;
 }
 
 .down-arrow {
-  position: absolute; /* position absolute within the first-row */
-  bottom: 1em; /* distance from bottom of first-row */
-  left: 50%; /* center horizontally within first-row */
-  transform: translateX(
-    -50%
-  ); /* this moves the down arrow to the left 50% of its width to center it within the first-row */
+  margin: 0 auto 2em;
+  position: relative;  /* position absolute within the first-row */
   padding: 1em;
 }
 
@@ -332,20 +327,10 @@ section.newsletter {
   .logomain {
     display: none;
   }
-  .down-arrow {
-    display: block !important;
-    position: absolute !important;
-    bottom: 150px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-  }
 
-  .container {
-    width: 100%;
-  }
   .left-column {
     float: none;
-    padding: 0;
+    padding: 20px 0 30px;
     width: 100%;
   }
 }
@@ -364,8 +349,20 @@ section.newsletter {
     font-size: 26px;
   }
 
+  .first-row {
+    display: flex;
+  }
+
   #right-column {
     display: block;
+  }
+
+  .down-arrow {
+    position: absolute !important;
+    bottom: -10px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin: 0 0 1em;
   }
 
   .footer .container {
