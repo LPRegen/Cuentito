@@ -412,8 +412,7 @@ h6 {
 }
 
 h1.title {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin: 20px 0 !important;
   text-align: center;
 }
 
