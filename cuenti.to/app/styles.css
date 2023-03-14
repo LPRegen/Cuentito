@@ -3,6 +3,10 @@ body {
   font-size: 14px;
 }
 
+a:link {
+  -webkit-tap-highlight-color: transparent !important;
+}
+
 /* Grid container */
 #grid-container {
   display: grid;
