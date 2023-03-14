@@ -337,7 +337,7 @@ h6 {
   height: 33px;
   text-align: center;
   transition: opacity 0.3s;
-  margin: 0.5rem 0 1em;
+  margin: 0.5rem auto 1em;
 }
 .plan .cuentito10 {
   text-align: center;
@@ -507,6 +507,10 @@ h1.title {
 
 .pa {
   margin-bottom: 0;
+}
+
+.post {
+  display: grid;
 }
 
 .post-actions {
