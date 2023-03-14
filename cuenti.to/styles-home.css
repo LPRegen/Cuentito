@@ -65,8 +65,7 @@ body {
 .logomain {
   width: 200px;
   height: 200px;
-  margin: 0 auto;
-  margin-bottom: 2em;
+  margin: 0 auto 1em;
 }
 .title {
   margin-bottom: 1em !important;
@@ -178,6 +177,10 @@ h1 {
 .right-column {
   flex: 1; /* each column will take up equal space within the first-row */
   /* height: 100%; */ /* make each column 100% height of the first-row */
+}
+
+.logo-container {
+  margin-top: 0;
 }
 
 .login-link {
