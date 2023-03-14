@@ -645,10 +645,6 @@ article {
   border-radius: 10px;
 }
 
-.cuentitos:hover {
-  opacity: 0.5;
-}
-
 h2 {
   margin-top: 10px;
   font-size: 1.1em;
