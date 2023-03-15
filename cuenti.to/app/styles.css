@@ -659,6 +659,7 @@ h2 {
 }
 
 hr {
+  display: block !important;
   margin: 3em 0;
 }
 
