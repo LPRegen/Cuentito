@@ -796,7 +796,7 @@ hr {
   .plan {
     width: 33%;
     gap: 0.5rem;
-    height: inherit;
+    height: inherit !important;
     align-self: auto;
   }
 
