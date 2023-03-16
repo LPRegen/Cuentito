@@ -3,10 +3,6 @@ body {
   font-size: 14px;
 }
 
-a:link {
-  -webkit-tap-highlight-color: transparent !important;
-}
-
 /* Grid container */
 #grid-container {
   display: grid;
@@ -22,9 +18,10 @@ a:link {
 }
 
 #countbox {
-  position: absolute;
-  right: 40px;
-  bottom: 60px;
+  position: relative;
+  width: fit-content;
+  right: -90%;
+  bottom: 40px;
   font-size: 12px;
 }
 
@@ -183,6 +180,10 @@ a:link {
   padding: 1rem;
   font-size: 15px;
   color: #555555;
+  font-size: 15px;
+  color: #555555;
+  font-size: 15px;
+  color: #555555;
   font-family: "Open Sans", "helvetica neue", helvetica, arial, sans-serif;
 }
 
@@ -284,13 +285,6 @@ h6 {
   padding: 1em;
   display: flex;
   justify-content: space-between;
-}
-.invite {
-  margin-right: auto;
-}
-
-.upgrade {
-  margin-left: auto;
 }
 
 .billing-modal .container {
@@ -668,6 +662,28 @@ hr {
   margin-bottom: 0 !important;
 }
 
+/******************************** Invitar amigos & subir de nivel *******************************/
+#form-column > .row {
+  gap: 0.5rem;
+  /* margin-top: 1rem; */
+  padding: 0 15px !important;
+}
+
+.row > .invite , .row > .upgrade {
+  width: 100%;
+}
+
+.row > .invite > button, .row > .upgrade > button {
+    width: inherit !important;
+  }
+
+
+@media only screen and (min-width: 500px) {
+  #form-column > .row {
+    gap: 0.7rem;
+  }
+ }
+
 /******************************** /CATEGORY *******************************/
 
 /* Media query styles for mobile */
@@ -681,11 +697,6 @@ hr {
 
   /******************************** BILLING MODAL *******************************/
 
-  .invite,
-  .upgrade {
-    margin-left: 0;
-    width: 100%;
-  }
   .plan {
     width: 100%;
     height: auto;
@@ -697,10 +708,6 @@ hr {
   /******************************** /BILLING MODAL *******************************/
 
   /******************************** SINGLE *******************************/
-  #countbox {
-    bottom: 60px;
-  }
-
   #print {
     position: fixed;
     display: block;
@@ -717,10 +724,6 @@ hr {
     right: -8em;
     width: 26em;
     transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
   }
 
