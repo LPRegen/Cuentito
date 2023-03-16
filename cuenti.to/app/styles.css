@@ -187,7 +187,8 @@ body {
   font-family: "Open Sans", "helvetica neue", helvetica, arial, sans-serif;
 }
 
-.modal-text, .login-modal-text {
+.modal-text,
+.login-modal-text {
   text-align: center;
 }
 
@@ -666,20 +667,21 @@ hr {
   padding: 0 15px !important;
 }
 
-.row > .invite , .row > .upgrade {
+.row > .invite,
+.row > .upgrade {
   width: 100%;
 }
 
-.row > .invite > button, .row > .upgrade > button {
-    width: inherit !important;
-  }
-
+.row > .invite > button,
+.row > .upgrade > button {
+  width: inherit !important;
+}
 
 @media only screen and (min-width: 500px) {
   #form-column > .row {
     gap: 0.7rem;
   }
- }
+}
 
 /******************************** /CATEGORY *******************************/
 
