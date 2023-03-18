@@ -423,6 +423,10 @@ h1.title {
   position: relative;
 }
 
+#site-header > .container {
+  height: calc(100vh - 132px);
+}
+
 .row {
   height: auto;
   padding: 0 !important;
@@ -811,6 +815,10 @@ hr {
 
   .message-container {
     min-width: 550px;
+  }
+
+  #site-header > .container {
+    height: calc(100vh - 121px);
   }
 }
 

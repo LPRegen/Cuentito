@@ -47,7 +47,7 @@ body {
 .left-column {
   text-align: center;
   padding-top: 0;
-  padding: 50px;
+  padding: 1em;
 }
 
 #right-column {
@@ -65,7 +65,7 @@ body {
 .logomain {
   width: 200px;
   height: 200px;
-  margin: 0 auto 1em;
+  margin: 0 auto;
 }
 .title {
   margin-bottom: 1em !important;
@@ -169,7 +169,7 @@ h1 {
 
 .down-arrow {
   margin: 0 auto 2em;
-  position: relative;  /* position absolute within the first-row */
+  position: relative; /* position absolute within the first-row */
   padding: 1em;
 }
 
