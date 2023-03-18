@@ -45,17 +45,12 @@ body {
 }
 
 .left-column {
-  text-align: center;
-  padding-top: 0;
   padding: 1em;
 }
 
 #right-column {
   display: none;
-  text-align: center;
-  padding: 50px;
   opacity: 0.8;
-  right: 0px;
   background-image: url(/images/caperucita.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -63,13 +58,13 @@ body {
 }
 
 .logomain {
-  width: 200px;
-  height: 200px;
+  width: 170px;
+  height: 170px;
   margin: 0 auto;
 }
 .title {
   margin-bottom: 1em !important;
-  font-size: 36px;
+  font-size: 36px !important;
   color: #fff;
   font-family: "Epilogue", Arial, Helvetica, "sans-serif";
   text-align: left;
@@ -352,24 +347,23 @@ section.newsletter {
 }
 
 @media (min-width: 1200px) {
+  
   h2 {
     font-size: 26px;
   }
 
   .first-row {
-    display: flex;
+    grid: min-content / repeat(2, 1fr);
+    column-gap: 1em;
   }
 
   #right-column {
     display: block;
+    margin-left: 15%;
   }
 
   .down-arrow {
-    position: absolute !important;
-    bottom: -10px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    margin: 0 0 1em;
+    grid-column: 1 / 3;
   }
 
   .footer .container {
