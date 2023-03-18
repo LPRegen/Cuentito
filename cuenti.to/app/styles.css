@@ -221,6 +221,10 @@ body {
   overflow: auto;
 }
 
+.billing-modal-body > .container {
+  padding: 0 !important;
+}
+
 .billing-modal-title {
   display: inline-block;
   font-size: 30px;
