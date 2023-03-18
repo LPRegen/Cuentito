@@ -168,7 +168,7 @@ h1 {
 }
 
 .down-arrow {
-  margin: 0 auto 2em;
+  margin: auto;
   position: relative; /* position absolute within the first-row */
   padding: 1em;
 }
