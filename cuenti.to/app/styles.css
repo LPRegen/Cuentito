@@ -415,7 +415,7 @@ h1.title {
 #content {
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0);
-  border: 0;
+  border: 0 !important;
 }
 
 .container {
@@ -511,6 +511,9 @@ h1.title {
 
 .post {
   display: grid;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  margin-bottom: 2em;
 }
 
 .post-actions {
@@ -518,11 +521,10 @@ h1.title {
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   width: 60%;
-  margin: 0 auto;
+  margin: 2em auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 2em;
 }
 
 .post-actions > form > button {
@@ -584,7 +586,7 @@ h1.title {
 
 .related-posts {
   border-radius: 10px;
-  margin-bottom: unset !important;
+  margin: 0 !important;
 }
 
 .content {
