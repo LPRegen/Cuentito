@@ -588,9 +588,10 @@ h1.title {
 }
 
 .content {
-  margin: 0 auto;
+  margin: 1em auto 0 !important;
   display: flex;
-  margin-top: 1em;
+  background-color: #fff;
+  border-radius: 12px;
 }
 
 .upper {
@@ -628,6 +629,7 @@ h1.title {
 /******************************** CATEGORY *******************************/
 article {
   background: #fff;
+  margin-bottom: 0 !important;
 }
 
 .category h2 {
