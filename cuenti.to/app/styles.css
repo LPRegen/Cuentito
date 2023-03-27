@@ -360,7 +360,7 @@ h6 {
 .article {
   display: grid;
   gap: 2em;
-  background-color: red;
+  background: linear-gradient(44deg, #e3a74d 0%, #e9cf97 100%);
 }
 
 /* Images container */
@@ -552,6 +552,7 @@ h1.title {
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 12px;
   /*margin-bottom: 2em;*/
+  background-color: #fff;
 }
 
 .post-actions {
