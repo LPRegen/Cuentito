@@ -360,7 +360,6 @@ h6 {
 .article {
   display: grid;
   gap: 2em;
-  background: linear-gradient(44deg, #e3a74d 0%, #e9cf97 100%);
 }
 
 /* Images container */
@@ -379,7 +378,7 @@ h6 {
   left: 0;
   right: 0;
   z-index: 999;
-  animation: fadeout 20s linear forwards;
+  animation: fadeout 15s linear forwards;
 }
 
 @keyframes fadeout {
@@ -552,7 +551,6 @@ h1.title {
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 12px;
   /*margin-bottom: 2em;*/
-  background-color: #fff;
 }
 
 .post-actions {
