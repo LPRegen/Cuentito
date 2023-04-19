@@ -188,6 +188,11 @@ section.newsletter {
   padding-bottom: 2em;
 }
 
+section.how * p,
+section.newsletter * p {
+  text-align: left !important;
+}
+
 .down-arrow {
   cursor: pointer;
 }
