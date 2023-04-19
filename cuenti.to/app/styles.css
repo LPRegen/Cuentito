@@ -20,7 +20,7 @@ body {
 #countbox {
   position: relative;
   width: fit-content;
-  right: -90%;
+  right: -80%;
   bottom: 40px;
   font-size: 12px;
 }
