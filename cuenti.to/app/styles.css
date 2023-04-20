@@ -452,10 +452,6 @@ h1.title {
   position: relative;
 }
 
-#site-header > .container {
-  height: calc(100vh - 132px);
-}
-
 .row {
   height: auto;
   padding: 0 !important;
@@ -762,6 +758,12 @@ hr {
 
   .message-container {
     width: 310px;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  #site-header > .container {
+    height: calc(100vh - 132px);
   }
 }
 
