@@ -335,7 +335,6 @@ h6 {
   background-color: #555;
   color: #fff;
   padding: 5px 10px;
-  /* FIX: Check how is displayed */
   border-radius: 3px;
   font-size: 12px;
   z-index: 1;
@@ -760,11 +759,19 @@ hr {
   .article .post #content {
     padding: 20px 30px !important;
   }
+
+  .message-container {
+    width: 310px;
+  }
 }
 
 @media only screen and (min-width: 500px) {
   #form-column > .row {
     gap: 0.7rem;
+  }
+
+  .message-container {
+    width: 470px;
   }
 
   .post-actions {
