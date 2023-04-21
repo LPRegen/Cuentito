@@ -775,6 +775,11 @@ hr {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
   }
 
+  #tooltip {
+    width: 300px;
+    margin: 0 auto;
+  }
+
   #site-footer {
     z-index: 98;
   }
@@ -799,11 +804,6 @@ hr {
     display: flex;
     width: 80%;
     justify-content: space-between;
-  }
-
-  #tooltip {
-    width: 300px;
-    margin: 0 auto;
   }
 }
 
