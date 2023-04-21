@@ -741,10 +741,6 @@ hr {
   width: inherit !important;
 }
 
-#site-footer {
-  z-index: 101;
-}
-
 @media only screen and (min-width: 350px) {
   .article .post #content {
     padding: 20px 30px !important;
@@ -779,10 +775,6 @@ hr {
   #tooltip {
     width: 300px;
     margin: 0 auto;
-  }
-
-  #site-footer {
-    z-index: 98;
   }
 }
 
