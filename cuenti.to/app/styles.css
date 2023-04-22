@@ -3,6 +3,10 @@ body {
   font-size: 14px;
 }
 
+::after {
+  background-color: transparent !important;
+}
+
 a:link {
   -webkit-tap-highlight-color: transparent !important;
 }
