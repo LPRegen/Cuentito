@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Ubuntu", Arial, sans-serif;
   font-size: 14px;
@@ -122,6 +126,7 @@ a:link {
   padding: 0.375em 0.75em;
   font-size: 1rem;
   cursor: pointer;
+  margin-bottom: 2rem;
 }
 
 .btn-primary:disabled {
