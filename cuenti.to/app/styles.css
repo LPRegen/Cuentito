@@ -1,13 +1,8 @@
-html {
-  height: 100%;
-}
-
 body {
   font-family: "Ubuntu", Arial, sans-serif;
   font-size: 14px;
   background: linear-gradient(90deg, #e3a74d 0%, #e9cf97 100%) !important;
   min-height: 100%;
-  height: unset !important;
 }
 
 ::after {
@@ -373,6 +368,7 @@ h6 {
 .article {
   display: grid;
   gap: 2em;
+  background-color: transparent !important;
 }
 
 .type-post {
