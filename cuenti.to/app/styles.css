@@ -377,6 +377,7 @@ h6 {
   display: grid;
   gap: 2em;
   background-color: transparent !important;
+  box-shadow: unset !important;
 }
 
 .type-post {
@@ -580,6 +581,8 @@ h1.title {
   display: grid;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 12px;
+  box-shadow: rgb(144 153 166 / 10%) 0px 12px 50px,
+    rgb(144 153 166 / 5%) 0px 4px 24px;
   /*margin-bottom: 2em;*/
 }
 
@@ -669,6 +672,8 @@ h1.title {
   border-radius: 10px;
   margin: 0 !important;
   padding: 20px 1rem !important;
+  box-shadow: rgb(144 153 166 / 10%) 0px 12px 50px,
+    rgb(144 153 166 / 5%) 0px 4px 24px;
 }
 
 .content {
