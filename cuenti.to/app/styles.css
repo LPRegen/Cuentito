@@ -17,6 +17,10 @@ a:link {
   -webkit-tap-highlight-color: transparent !important;
 }
 
+#site-header > .container {
+  min-height: calc(100vh - 121px);
+}
+
 /* Grid container */
 #grid-container {
   display: grid;
@@ -790,12 +794,6 @@ hr {
   }
 }
 
-@media only screen and (min-width: 400px) {
-  #site-header > .container {
-    height: calc(100vh - 132px);
-  }
-}
-
 @media only screen and (min-width: 500px) {
   #form-column > .row {
     gap: 0.7rem;
@@ -919,10 +917,6 @@ hr {
 
   .message-container {
     min-width: 550px;
-  }
-
-  #site-header > .container {
-    height: calc(100vh - 121px);
   }
 
   .post-actions {
